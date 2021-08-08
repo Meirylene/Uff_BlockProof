@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Block Proof</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Block Proof</h1>
+  <p>UNIVERSIDADE FEDERAL FLUMINENSE</p> 
+  <p>Aluna: Meirylene Rosa Emidio Avelino</p> 
+  <p>Professor: Antônio Augusto de Aragão Rocha</p> 
+</div>
+  
+<div class="container">
+    <H1>{{error}}</H1>
+    <form action="/registrar" method="POST">
+      <p class="bg-primary"><h2>Registro</h2></p>
+        <div class="form-group">
+            <label for="title">Título</label><br>
+            <input type="text" class="form-control" id="title" name="title" placeholder="Título">
+            </label>
+        </div>
+            
+        <div class="form-group">
+            <label for="url">URL</label><br>
+            <input type="text" class="form-control" id="url" name="url" placeholder="URL">
+            </label> 
+        </div>
+   
+        <button type="submit" class="btn btn-success">Registrar</button>    
+        <a href="/opcoes" class="btn btn-info" role="button">Voltar</a>   
+       
+     </form>
+
+     <br>
+     <br>
+
+     
+</div>
+
+</body>
+</html>

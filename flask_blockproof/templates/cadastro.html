@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Web Proxy Chain</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Block Proof</h1>
+  <p>UNIVERSIDADE FEDERAL FLUMINENSE</p> 
+  <p>Aluna: Meirylene Rosa Emidio Avelino</p> 
+  <p>Professor: Antônio Augusto de Aragão Rocha</p> 
+</div>
+  
+<div class="container">
+    <H2>Página de Cadastro</H2>
+    <font color="red"><H10>{{error}}</H10></font>
+    <form action="/cadastro" method="POST">
+        
+        <div class="form-group">
+            <label for="name">Usuário *</label><br>
+            <input type="name" class="form-control" id="name" name="name" placeholder="Usuário" value="{{request.form['name']}}"></input>
+            </label>
+        </div>
+            
+        <div class="form-group">
+          <label for="email">Email</label><br>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Email" value="{{request.form['email']}}"></input>
+          </label> 
+      </div>
+
+      <div class="form-group">
+        <label for="tel">Telefone</label><br>
+        <input type="tel" class="form-control" id="tel" name="tel" placeholder="Tel" value="{{request.form['tel']}}"></input>
+        </label> 
+    </div>
+
+    <div class="form-group">
+      <label for="password">Senha *</label><br>
+      <input type="password" class="form-control" id="password" name="password" placeholder="Senha" value="{{request.form['password']}}"></input>
+      </label> 
+    </div>
+   
+        <button type="submit" class="btn btn-success">Cadastrar</button>
+        <br>
+        <br>
+
+       
+     </form>
+</div>
+
+
+
+</body>
+</html>

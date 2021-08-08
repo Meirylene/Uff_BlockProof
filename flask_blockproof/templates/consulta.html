@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Web Proxy Chain</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Block Proof</h1>
+  <p>UNIVERSIDADE FEDERAL FLUMINENSE</p> 
+  <p>Aluna: Meirylene Rosa Emidio Avelino</p> 
+  <p>Professor: Antônio Augusto de Aragão Rocha</p> 
+</div>
+  
+<div class="container">
+    <H1>{{error}}</H1>
+    <p><b>URL:</b> {{url}} </p>
+    <p><b>Titulo:</b> {{titulo}} </p>   
+    <p><b>Hash da URL:</b> {{hash_url}} </p>
+    <p><b>Hash do Conteúdo 1:</b> {{hash_content1}} </p>   
+    <p><b>Hash do Conteúdo 2:</b> {{hash_content2}} </p>   
+    <p><b>Minhash - Lista de minimos 1:</b> {{list_min1}} </p>   
+    <p><b>MinHash - Lista de minimos 2:</b> {{list_min2}} </p> 
+    <p><b>Jaccard:</b> {{jaccard}} </p>       
+    <p><b>Responsavel pelo Registro:</b> {{autor}} </p>   
+    <p><b>Endereco da Carteira:</b> {{sender}} </p>   
+    <p><b>Hora: {{timeHour}}</b> </p>  
+    <p><b>Qtd de registros:</b> {{qtdReg}} </p>    
+
+
+    <a href="/opcoes" class="btn btn-info" role="button">Voltar</a>
+
+</div>
+
+</body>
+</html>
